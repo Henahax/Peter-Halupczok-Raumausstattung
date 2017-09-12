@@ -17,43 +17,75 @@
 
     <style>
         body {
-            background: #474e5d !important;
+            background: url("cloth-1337174_1920.jpg");
         }
-        .bg-1 {
-            background-color: rgba(155, 0, 0, 0.5);
+
+        h1, h2, h3, h4, h5, h6 {
+            line-height: 2;
+        }
+
+        .Überschrift {
+            color: white;
+            text-shadow:
+                    -1px -1px 0 #000,
+                    1px -1px 0 #000,
+                    -1px 1px 0 #000,
+                    1px 1px 0 #000;
+
+        }
+        .Einleitung{
+            background-color: rgba(255,255,255,0.90);
+            text-align: left;
+            line-height: 200%;
+        }
+
+        .Image-Einleitung {
+            text-align: center;
+            width: 100%;
+            min-height: 470px;
+            max-height: 470px;
+            max-width: 720px;
+            object-fit: cover;
+
+        }
+
+
+        .Vorhänge {
+            background-color: rgba(255,255,255,1);
+        }
+        .Möbelbezugsstoffe {
+            background-color: rgba(255,255,255,0.75);
+        }
+        .Kontakt {
             color: #ffffff;
-            background-image: url("cloth-1337174_1920.jpg");
-        }
-        .bg-2 {
-            background-color: white;
-            color: black;
-        }
-        .bg-3 {
-            background-color: rgba(155, 0, 0, 0.5);
-            color: #ffffff;
-            background-image: url("cloth-1337174_1920.jpg");
-        }
-        .bg-10 {
-            background-color: #474e5d;
-            color: #ffffff;
+            background: black;
+            text-align: center;
         }
         .container-fluid {
-            padding-top: 70px;
-            padding-bottom: 70px;
+            padding-top: 40px;
+            padding-bottom: 40px;
         }
         .carousel-inner{
             height: 550px;
         }
     </style>
 </head>
-<body bgcolor="gray">
-
-<div class="container-fluid bg-1 text-center">
+<div class="container-fluid Überschrift text-center">
     <h1>Peter Halupczok Raumausstattung</h1>
-    <img src="index.jpg" class="img-responsive" style="display:inline">
+</div>
+<div class="container-fluid Einleitung text-center">
+    <div class="col-sm-1"></div>
+    <div class="col-sm-7" align="center"><img src="index.jpg" class="Image-Einleitung"></div>
+    <div class="col-sm-3">
+        <h5>Sie sind gerade beim Einrichten Ihrer Wohnung, Ihres Hauses oder Ihrer Geschäftsräume?</h5>
+        <h5>Viele Informationen, viel Erfahrung und technisches "Know how" ist jetzt gefragt.</h5>
+        <h5>Ob Fensterdekoration, Bodenbeläge, Sicht- und Sonnenschutz, Polsterarbeiten oder Insektenschutz, ich verwirkliche Ihre Wünsche individuell mit meinen eigenen Mitarbeitern umfassend, fachmännisch und zuverlässig.</h5>
+        <h5>Bitte vereinbaren Sie Ihren persönlichen Termin für ein unverbindliches Beratungsgespräch in unserem Showroom, oder auch gerne bei Ihnen Zuhause.</h5>
+    </div>
+    <div class="col-sm-1"></div>
 </div>
 
-<div class="container-fluid bg-2 text-center">
+<div class="container-fluid Vorhänge text-center">
     <h2>Vorhänge und Gardinen</h2>
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
         <!-- Indicators -->
@@ -95,7 +127,7 @@
     </div>
 </div>
 
-<div class="container-fluid bg-3 text-center">
+<div class="container-fluid Möbelbezugsstoffe text-center">
     <h2>Möbelbezugsstoffe</h2>
     <div id="myCarousel2" class="carousel slide" data-ride="carousel">
         <!-- Indicators -->
@@ -137,20 +169,24 @@
     </div>
 </div>
 
-<div class="container-fluid bg-10 text-center">
-    <h3>Kontakt</h3><br>
-    <div class="col-sm-6">
-        <p>Peter Halupczok Raumausstattung</p>
-        <p>Gardinenstudio: Seeblickstraße 5</p>
-        <p>Post-/Lieferadresse: Rigistraße 1</p>
-        <p>82449 Uffing am Staffelsee</p>
+<div class="container-fluid Kontakt">
+    <div align="center"><h3>Kontakt</h3></div>
+    <br>
+    <div class="col-sm-2"></div>
+    <div class="col-sm-3">
+        <h5>Peter Halupczok Raumausstattung</h5>
+        <h5>Gardinenstudio: Rigistraße 1</h5>
+        <h5>Post-/Lieferadresse: Seeblickstraße 5</h5>
+        <h5>82449 Uffing am Staffelsee</h5>
     </div>
-    <div class="col-sm-6">
-        <p><a href="http://www.google.com/recaptcha/mailhide/d?k=01g5QWVIBaPGRmMDIzqPMauA==&amp;c=3ZvLM9dUHZJpMiw1nAVStI9tke-zfHfNJyl0t-FXMQ0=" onclick="window.open('http://www.google.com/recaptcha/mailhide/d?k\x3d01g5QWVIBaPGRmMDIzqPMauA\x3d\x3d\x26c\x3d3ZvLM9dUHZJpMiw1nAVStI9tke-zfHfNJyl0t-FXMQ0\x3d', '', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=500,height=300'); return false;" title="E-Mail">E-Mail versenden</a></p>
-        <p>Telefon: +49 8846 1605</p>
-        <p>Mobil: +49 170 4890328</p>
-        <p>Telefax: +49 8846 914935</p>
+    <div class="col-sm-2"></div>
+    <div class="col-sm-3">
+        <h5><a href="http://www.google.com/recaptcha/mailhide/d?k=01g5QWVIBaPGRmMDIzqPMauA==&amp;c=3ZvLM9dUHZJpMiw1nAVStI9tke-zfHfNJyl0t-FXMQ0=" onclick="window.open('http://www.google.com/recaptcha/mailhide/d?k\x3d01g5QWVIBaPGRmMDIzqPMauA\x3d\x3d\x26c\x3d3ZvLM9dUHZJpMiw1nAVStI9tke-zfHfNJyl0t-FXMQ0\x3d', '', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=500,height=300'); return false;" title="E-Mail">E-Mail versenden</a></h5>
+        <h5>Telefon: +49 8846 1605</h5>
+        <h5>Mobil: +49 170 4890328</h5>
+        <h5>Telefax: +49 8846 914935</h5>
     </div>
+    <div class="col-sm-2"></div>
 </div>
 </body>
 </html>
